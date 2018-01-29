@@ -1,0 +1,7 @@
+var start = document.getElementsById('start'),
+var stop = document.getElementsById('stop'),
+var lap = document.getElementsById('lap'),
+var clear = document.getElementsById('clear'),
+var hours = document.getElementsById('hours'),
+var minutes = document.getElementsById('minutes'),
+var seconds = document.getElementsById('seconds'),

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Dhurjati|Supermercado+One');
+.box {
+  background: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-family: 'Supermercado One';
+  font-size: 150px;
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#start, #lap, #stop, #clear {
+  border: none;
+  font-family: "Dhurjati";
+  font-weight: normal;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+
+}
+
+
+#start {
+  text-align: center;
+  background-color: #43ba4a;
+  width: auto;
+  margin-right: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+#start:hover, #stop:hover {
+  color: #ffffff;
+}
+
+#clear:hover {
+  border: solid 2px;
+}
+
+
+#lap:hover {
+  color: grey;
+
+}
+
+
+#lap {
+  border-radius: 30px;
+  text-align: center;
+  width: 80px;
+}
+
+#stop {
+  background-color: #f23737;
+  margin-left: 50px;
+  padding-right: 60px;
+  padding-left: 60px;
+  text-align: center;
+}
+
+#clear {
+  background-color: white;
+  padding-right: 60px;
+  padding-left: 60px;
+  text-align: center;
+  margin: 50px auto;
+  display: block;
+}
+
+/* @media screen and (max-width: 500px) {
+  #stop {
+    display:inline-block;
+
+  }
+
+} */
