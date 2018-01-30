@@ -1,7 +1,24 @@
-var start = document.getElementsById('start'),
-var stop = document.getElementsById('stop'),
-var lap = document.getElementsById('lap'),
-var clear = document.getElementsById('clear'),
-var hours = document.getElementsById('hours'),
-var minutes = document.getElementsById('minutes'),
-var seconds = document.getElementsById('seconds'),
+
+var running = 0;
+var time = 0;
+var interval = setInterval(function() {
+ if(running === 1){
+    time++;
+    document.getElementById('miliseconds').innerHTML = time;
+}
+}, 1)
+
+
+
+document.getElementById('start').addEventListener("click", function(){
+  running = 1;
+  interval();
+})
+
+document.getElementById('stop').addEventListener("click", function(){
+
+  clearInterval(interval);
+  running = 0;
+
+})
+
