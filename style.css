@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dhurjati|Supermercado+One');
 .box {
   background: white;
-  max-width: 1000px;
+  max-width: 1150px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -23,6 +23,7 @@
   cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
+  box-shadow: 0 #999;
 
 }
 
@@ -36,8 +37,10 @@
   padding-left: 60px;
 }
 #start:hover, #stop:hover {
+
   color: #ffffff;
 }
+
 
 #clear:hover {
   border: solid 2px;
@@ -47,6 +50,11 @@
 #lap:hover {
   color: grey;
 
+}
+
+#start:active, #lap:active, #stop:active, #clear:active {
+  box-shadow: 0 #666;
+  transform: translateY(2px);
 }
 
 
@@ -76,7 +84,5 @@
 /* @media screen and (max-width: 500px) {
   #stop {
     display:inline-block;
-
   }
-
 } */
