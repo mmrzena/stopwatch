@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Dhurjati|Supermercado+One');
 .box {
   background: white;
-  max-width: 1150px;
-  margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 80px;
   font-family: 'Supermercado One';
   font-size: 150px;
-  text-align: center;
+  
 }
 
 .buttons {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
+
+}
+ .colon {
+   text-align: center;
+ }
+
+#minutes, #miliseconds, #seconds {
+  width: 100px;
+  marging: 0 auto;
 }
 
 #start, #lap, #stop, #clear {
@@ -21,7 +28,7 @@
   font-weight: normal;
   font-size: 30px;
   cursor: pointer;
-  display: inline-block;
+
   text-transform: uppercase;
   box-shadow: 0 #999;
 
@@ -32,24 +39,24 @@
   text-align: center;
   background-color: #43ba4a;
   width: auto;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   padding-right: 60px;
   padding-left: 60px;
 }
-#start:hover, #stop:hover {
+#start:hover, #stop:hover, {
 
   color: #ffffff;
 }
 
 
 #clear:hover {
-  border: solid 2px;
+  background: black;
+  color: white;
 }
 
 
 #lap:hover {
   color: grey;
-
 }
 
 #start:active, #lap:active, #stop:active, #clear:active {
@@ -57,6 +64,10 @@
   transform: translateY(2px);
 }
 
+
+li {
+  white-space: pre;
+}
 
 #lap {
   border-radius: 30px;
@@ -66,7 +77,7 @@
 
 #stop {
   background-color: #f23737;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   padding-right: 60px;
   padding-left: 60px;
   text-align: center;
@@ -76,13 +87,12 @@
   background-color: white;
   padding-right: 60px;
   padding-left: 60px;
-  text-align: center;
   margin: 50px auto;
-  display: block;
+  display: inline-block;
 }
 
-/* @media screen and (max-width: 500px) {
-  #stop {
-    display:inline-block;
+#laps {
+  font-family: 'Supermercado One';
+  font-size: 40px;
+  text-align: center;
   }
-} */
