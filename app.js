@@ -3,9 +3,6 @@ var time = 0;
 var interval;
 var timer = {};
 
-
-
-
 function start() {
 
   if (!running) {
@@ -15,9 +12,11 @@ function start() {
       timer.m = Math.floor(time / 100 / 60 % 60);
       timer.s = Math.floor(time / 100 % 60);
       timer.ms = time % 100;
+
       if (timer.m < 10) {
         timer.m = "0" + timer.m;
       }
+
       if (timer.s < 10) {
         timer.s = "0" + timer.s;
       }
@@ -25,7 +24,6 @@ function start() {
       if (timer.ms < 10) {
         timer.ms = "0" + timer.ms;
       }
-
 
       document.getElementById('minutes').innerHTML = timer.m;
       document.getElementById('seconds').innerHTML = timer.s;
@@ -51,14 +49,10 @@ function clearr() {
 
 }
 
-
 function lap() {
-
-    let li = document.createElement("li")
-    let lapLi = document.createTextNode(timer.m + ":" + timer.s + ":" + timer.ms + "\n");
-
-    document.getElementById('laps').appendChild(lapLi);
-
-
-
+  let li = document.createElement("li");
+  let lapLi = document.createTextNode(timer.m + ":" + timer.s + ":" + timer.ms);
+  let br = document.createElement("br");
+  document.getElementById('laps').appendChild(lapLi);
+  document.getElementById('laps').appendChild(br);
 }

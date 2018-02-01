@@ -5,21 +5,13 @@
   padding-bottom: 80px;
   font-family: 'Supermercado One';
   font-size: 150px;
-  
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .buttons {
   text-align: center;
   margin-top: 20px;
-
-}
- .colon {
-   text-align: center;
- }
-
-#minutes, #miliseconds, #seconds {
-  width: 100px;
-  marging: 0 auto;
 }
 
 #start, #lap, #stop, #clear {
@@ -28,36 +20,47 @@
   font-weight: normal;
   font-size: 30px;
   cursor: pointer;
-
   text-transform: uppercase;
   box-shadow: 0 #999;
-
 }
 
 
 #start {
-  text-align: center;
   background-color: #43ba4a;
-  width: auto;
-  /* margin-right: 50px; */
-  padding-right: 60px;
-  padding-left: 60px;
+  width: 150px;
+  margin: 0 auto;
 }
-#start:hover, #stop:hover, {
 
+#lap {
+  border-radius: 30px;
+  width: 80px;
+}
+
+#stop {
+  background-color: #f23737;
+  width: 150px;
+  margin: 0 auto;
+}
+
+#clear {
+  background-color: white;
+  width: 150px;
+  margin: 0 auto;
+}
+
+#start:hover, #stop:hover {
   color: #ffffff;
 }
-
 
 #clear:hover {
   background: black;
   color: white;
 }
 
-
 #lap:hover {
   color: grey;
 }
+
 
 #start:active, #lap:active, #stop:active, #clear:active {
   box-shadow: 0 #666;
@@ -65,34 +68,8 @@
 }
 
 
-li {
-  white-space: pre;
-}
-
-#lap {
-  border-radius: 30px;
-  text-align: center;
-  width: 80px;
-}
-
-#stop {
-  background-color: #f23737;
-  /* margin-left: 50px; */
-  padding-right: 60px;
-  padding-left: 60px;
-  text-align: center;
-}
-
-#clear {
-  background-color: white;
-  padding-right: 60px;
-  padding-left: 60px;
-  margin: 50px auto;
-  display: inline-block;
-}
-
 #laps {
   font-family: 'Supermercado One';
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   }
