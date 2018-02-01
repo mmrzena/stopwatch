@@ -51,7 +51,7 @@ function clearr() {
 
 function lap() {
   let li = document.createElement("li");
-  let lapLi = document.createTextNode(timer.m + ":" + timer.s + ":" + timer.ms);
+  let lapLi = document.createTextNode(timer.m + ":" + timer.s + "." + timer.ms);
   let br = document.createElement("br");
   document.getElementById('laps').appendChild(lapLi);
   document.getElementById('laps').appendChild(br);
