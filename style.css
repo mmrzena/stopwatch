@@ -24,7 +24,6 @@
   box-shadow: 0 #999;
 }
 
-
 #start {
   background-color: #43ba4a;
   width: 150px;
@@ -35,7 +34,6 @@
   border-radius: 30px;
   width: 80px;
 }
-
 
 #clear {
   background-color: white;
@@ -61,15 +59,38 @@
   cursor: not-allowed;
 }
 
-
 #start:active, #lap:active, #clear:active {
   box-shadow: 0 #666;
   transform: translateY(2px);
 }
 
-
 #laps {
   font-family: 'Supermercado One';
   font-size: 50px;
   text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .box {
+    width: auto;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
+  #clear, #lap {
+    display: block;
+    margin: 20px auto;
+  }
+  #miliseconds, #seconds, #minutes {
+    display: block;
+  }
+  .colon {
+    display: none;
+  }
+  #seconds {
+    color: #43ba4a;
+  }
+}
+
+}
