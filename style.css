@@ -58,7 +58,7 @@
 
 #lap:disabled:hover {
   color: grey;
-  cursor: auto;
+  cursor: default;
 }
 
 
