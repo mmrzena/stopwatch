@@ -30,14 +30,22 @@ function start() {
       document.getElementById('miliseconds').innerHTML = timer.ms;
 
     }, 10)
+
     document.getElementById('lap').disabled = false;
+    document.getElementById('start').onclick = pause;
+    document.getElementById('start').innerHTML = "pause";
+    document.getElementById('start').style.background = '#efeb00';
+
   }
 }
 
-function stop() {
+function pause() {
   clearInterval(interval);
   running = false;
   document.getElementById('lap').disabled = true;
+  document.getElementById('start').onclick = start;
+  document.getElementById('start').innerHTML = "resume";
+  document.getElementById('start').style.background = '#43ba4a';
 }
 
 function clearr() {
@@ -46,6 +54,9 @@ function clearr() {
   document.getElementById('seconds').innerHTML = "00";
   document.getElementById('minutes').innerHTML = "00";
   document.getElementById('laps').innerHTML = "";
+  if (running === false) {
+  document.getElementById('start').innerHTML = "start";
+}
 
 }
 
