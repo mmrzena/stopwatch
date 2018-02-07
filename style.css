@@ -14,7 +14,7 @@
   margin-top: 20px;
 }
 
-#start, #lap, #stop, #clear {
+#start, #lap, #clear {
   border: none;
   font-family: "Dhurjati";
   font-weight: normal;
@@ -36,11 +36,6 @@
   width: 80px;
 }
 
-#stop {
-  background-color: #f23737;
-  width: 150px;
-  margin: 0 auto;
-}
 
 #clear {
   background-color: white;
@@ -48,7 +43,7 @@
   margin: 0 auto;
 }
 
-#start:hover, #stop:hover {
+#start:hover {
   color: #ffffff;
 }
 
@@ -58,11 +53,16 @@
 }
 
 #lap:hover {
+  color: white;
+}
+
+#lap:disabled:hover {
   color: grey;
+  cursor: auto;
 }
 
 
-#start:active, #lap:active, #stop:active, #clear:active {
+#start:active, #lap:active, #clear:active {
   box-shadow: 0 #666;
   transform: translateY(2px);
 }
