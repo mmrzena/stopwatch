@@ -93,4 +93,8 @@
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .box {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
